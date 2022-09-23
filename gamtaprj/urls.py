@@ -22,5 +22,5 @@ from home import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('gamta/', views.index),
-    path('login/', include(login.urls))
+    path('', include('login.urls'))
 ]

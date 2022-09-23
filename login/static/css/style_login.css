@@ -8,3 +8,8 @@ body > div {
     justify-content: center;
     align-items: center;
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2 !important;
+    border: 0;
+}

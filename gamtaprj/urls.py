@@ -17,12 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 import login.views
 
-from home import views
-
 urlpatterns = [
-    path('signup/', views.signup, name='signup'),
-    path('', views.login, name='login'),
-    path('home/', views.home, name='home'),
     path('admin/', admin.site.urls),
     path('', include('login.urls')),
 ]

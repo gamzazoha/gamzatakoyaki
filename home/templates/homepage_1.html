@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2? 패밀리=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="homepage_1.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/homepage_1.css' %}">
+    </head>
+    <body>
+        <div>
+            <div class="wrap">
+                <div class="intro_bg">
+                    <a href="homepage_1.html"><img class="tagami" src="{% static 'images/real_tagami.png' %}" alt="난 타가미"></a>
+
+                    <div class="header">
+                        <div class="searchArea">
+                            <form>
+                                <input type="search" placeholder="Search">
+                                <span>검색</span>
+                            </form>
+                        </div>
+                        <ul class="nav">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="food">CATEGORY</a></li>
+                            <li><a href="#">RECOMMEND</a></li>
+                            <li class="login"><a href="../login">로그인</a></li>
+                        </ul>       
+                    </div>
+                    <div class="intro_text">
+                        <h1>OuO in Daegu : Offer you offer</h1>
+                        <h4>감자타코야끼의 대구여행</h4>
+                    </div>
+                </div>
+                <!--intro end-->
+                <ul class="amount">
+                    <li>
+                        <div>
+                            <div class="contents1">이름</div>
+                            <div class="result">타가미(tagami)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="contents1">출생년도</div>
+                            <div class="result">2022/09/24</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="contents1">특징</div>
+                            <div class="result">복부비만</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="contents1">디자인</div>
+                            <div class="result">by.백엄마</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- amount end -->
+
+                <div class="main_text0">
+                    <h1>CATEGORY</h1>
+                    <div class="contents1">대구의 할인/이벤트를 한눈에</div>
+                
+                    <ul class="icons">
+                        <li>
+                            <div class="icon_img">
+                                <img class="hamburger" src="{% static 'images/burger1.jpg' %}">                         
+                            </div>
+                            <div class="contents1_bold">음식</div>
+                            <div class="contents2">
+                                다양한 맛집과 카페들
+                            </div>
+                            <div class="more">
+                                <a href="food">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_img">
+                                <img class="rhksrhkd" src="{% static 'images/rhksrhkd1.png' %}">                         
+                            </div>
+                            <div class="contents1_bold_rhks">관광/명소</div>
+                            <div class="contents2">
+                                볼거리 가득한 관광명소
+                            </div>
+                            <div class="more">
+                                <a href="place">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_img">
+                                <img class="beauty" src="{% static 'images/tkdwja1.png' %}">                         
+                            </div>
+                            <div class="contents1_bold_beauty">여가/뷰티</div>
+                            <div class="contents2">
+                                취미생활과 즐길거리들
+                            </div>
+                            <div class="more">
+                                <a href="beauty">MORE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_text1">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

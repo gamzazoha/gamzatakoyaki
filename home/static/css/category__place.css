@@ -1,0 +1,131 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #293c2c;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.category{
+    width:200px;
+    text-align: center;
+    background-color: #6B8E23;
+    border-radius:10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    margin-right: 10px;
+}
+
+.category > li:not(:first-child){
+    padding-top:30px;
+}
+.category a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 100;
+    padding:10px;
+}
+
+.category_place > a{
+    font-weight: bold;
+    font-size: 23px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+.category_ca{
+    border-bottom: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.category_ca > a{
+    font-size: 25px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.contents {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 35px;
+    font-family: 'Jua', sans-serif;
+    color: #293c2c;
+}
+
+.header__regions ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__regions li{
+    border-right: 1px solid #939393;
+    margin-top: -20px;
+    padding: 0 20px;
+    color: #747474;
+}
+
+.header__regions li:last-child{
+    border: 0;
+}
+
+.stores ul{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stores li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(216, 223, 216);
+    padding: 40px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.store__info{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px;
+}
+
+.store__name{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.store__des{
+    font-size: 17px;
+}

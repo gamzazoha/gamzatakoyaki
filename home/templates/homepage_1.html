@@ -17,9 +17,9 @@
 
                     <div class="header">
                         <div class="searchArea">
-                            <form>
+                            <form name="search" method="get" action="search/">
                                 <input type="search" placeholder="Search">
-                                <span>검색</span>
+                                <span onclick="document.forms['search'].submit();">검색</span>
                             </form>
                         </div>
                         <ul class="nav">

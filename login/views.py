@@ -11,7 +11,7 @@ def signup(request):
             )
             auth.login(request, user)
 
-            return redirect('home')
+            return redirect('login')
 
     return render(request, "signup.html")
 

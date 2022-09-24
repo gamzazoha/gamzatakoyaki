@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2? 패밀리=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="category__food__1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/category__food__1.css' %}">
+    </head>
+    <body>
+        <a href="../.."><img class="tagami" src="{% static 'images/real_tagami.png' %}" alt="난 타가미"></a>
+        <div class="contents">
+            <div class="header">
+                <div class="header_link">
+                    <span>Home > category > 음식</span>
+                </div>
+                <div class="header_title">
+                    <span>[ 바비레드 레스토랑 ]</span>
+                    <button>예약</button>
+                </div>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>이벤트정보 : 인스타업로드이벤트 : 치킨샐러드 & 에이드증정</li>
+                    <li>기간 : 2022/9/15 ~ 2022/9/30</li>
+                    <li>
+                        <span>가게위치 : 대구 동구 동부로 149 신세계백화점 대구점 지하 1층</span> 
+                        <button>지도에서 확인</button> 
+                    </li>
+                    <li>가게영업시간 : 매일 09:00 ~ 21:00 (break time : 15:00 ~ 17:00)</li>
+                    <li>전화 : 053-111-1111</li>
+                    <li>
+                        <span>주차가능공간</span> 
+                        <button>지도에서 확인</button> 
+                    </li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="{% static 'images/bobi1.jpg' %}" alt="image1">
+                <img src="{% static 'images/bobi2.jpg' %}" alt="image2">
+            </div>
+            
+        </div>
+    </body>
+</html>

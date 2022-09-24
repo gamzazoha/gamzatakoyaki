@@ -6,4 +6,19 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("hi")
+    return render(request, 'homepage_1.html')
+
+def food(request):
+    return render(request, 'category__food.html')
+
+def place(request):
+    return render(request, 'category__place.html')
+
+def beauty(request):
+    return render(request, 'category__beauty.html')
+
+def place1(request):
+    return render(request, 'category__place__1.html')
+
+def food1(request):
+    return render(request, 'category__food__1.html')

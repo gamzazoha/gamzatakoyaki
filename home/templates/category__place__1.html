@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2? 패밀리=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="category__place__1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/category__place__1.css' %}">
+    </head>
+    <body>
+        <a href="../"><img class="tagami" src="{% static 'images/real_tagami.png' %}" alt="난 타가미"></a>
+        <div class="contents">
+            <div class="header">
+                <div class="header_link">
+                    <span>Home > category > 관광/명소</span>
+                </div>
+                <div class="header_title">
+                    <span>[ 김광석 길거리 ㅇㅇ사진관 ]</span>
+                    <button>예약</button>
+                </div>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>이벤트정보 : 김광석길거리에서 벚꽃배경 사진 무료촬영 / 무료인화❤️</li>
+                    <li>기간 : 2022/03/15 ~ 2022/4/14</li>
+                    <li>
+                        <span>가게위치 : 대구광역시 중구 동덕로8길</span> 
+                        <button>지도에서 확인</button> 
+                    </li>
+                    <li>가게영업시간 : 매일 09:00~20:00 (수요일 휴무)</li>
+                    <li>전화 : 053-000-0000</li>
+                    <li>
+                        <span>주차가능공간</span> 
+                        <button>지도에서 확인</button> 
+                    </li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="{% static 'images/kim1.jpg' %}" alt="image1">
+                <img src="{% static 'images/kim2.jpg' %}" alt="image2">
+            </div>
+            
+        </div>
+    </body>
+</html>

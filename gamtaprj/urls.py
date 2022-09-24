@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('login.urls')),
     path('insta/', include('instagram.urls')),
-    path('pages/', include('home.urls')),
+    path('homepage/', include('home.urls')),
     path('user/', include('user.urls')),
 ]

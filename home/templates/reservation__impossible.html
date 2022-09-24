@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2? 패밀리=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="reservation__impossible.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/reservation__impossible.css' %}">
+    </head>
+    <body>
+        <a href="homepage_1.html"><img class="tagami" src="image/real_tagami.png" alt="난 타가미"></a>
+        <div class="contents">
+            <div class="header">
+                <div class="header_link">
+                    <span>Home > reservation</span>
+                </div>
+                <div class="header__title">
+                    <span>[ 예약 ]</span>
+                    <span>김광석거리 oo사진관</span>
+                </div>
+            </div>
+            <div class="possible">
+                <div class="possible__color">
+                    <button>예약불가능</button>
+                </div>
+                <div class="possible__contents">
+                    <ul>
+                        <li>
+                            <span>가게위치 : 대구광역시 중구 동덕로8길</span>
+                            <button>지도에서 확인</button>
+                        </li>
+                        <li>전화 : 053-000-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="reser">
+            <div>죄송합니다. 가게에 문의해주세요.</div>
+            <button><a onclick="history.back()">뒤로 가기</a></button>
+        </div>
+    </body>
+</html>

@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    color:#fff;
 }
 
 ul {
@@ -9,14 +10,15 @@ ul {
 @font-face {
     font-family: 'IM_Hyemin-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-}
-.tagami{
-    position: fixed;
-    width:30%;
-    right:0;
-    bottom:-50px;
+
 }
 
+.tagami{
+    position: fixed;
+    width:20%;
+    right:0;
+    bottom:-26px;
+}
 body {
     background-color: rgb(216, 223, 216);
     display: flex;
@@ -61,7 +63,7 @@ body {
 }
 .info li{
     font-size: 22px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 10px;
     letter-spacing: -1px;
     font-family: 'IM_Hyemin-Bold';
@@ -72,7 +74,7 @@ body {
     flex-direction: row;
 }
 
-.info li:last-child span{
+.info span{
     margin-right: 10px;
 }
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2? 패밀리=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="reservation__possible.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/reservation__possible.css' %}">
+    </head>
+    <body>
+        <a href="homepage_1.html"><img class="tagami" src="image/real_tagami.png" alt="난 타가미"></a>
+        <div class="contents">
+            <div class="header">
+                <div class="header_link">
+                    <span>Home > reservation</span>
+                </div>
+                <div class="header__title">
+                    <span>[ 예약 ]</span>
+                    <span>바비레드 레스토랑</span>
+                </div>
+            </div>
+            <div class="possible">
+                <div class="possible__color">
+                    <button>예약가능 ✔️</button>
+                </div>
+                <div class="possible__contents">
+                    <ul>
+                        <li>
+                            <span>가게위치 : 대구 동구 동부로 149 신세계백화점 대구점 지하 1층</span>
+                            <button>지도에서 확인</button>
+                        </li>
+                        <li>전화 : 053-111-1111</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="reser">
+            <ul>
+                <li>( 예약서 작성 )</li>
+                <li>
+                    <form>
+                        <span class="reser__info">예약자 : </span>
+                        <input class="reser__input" type="text">  
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <span class="reser__info">예약자 전화번호 : </span>
+                        <input class="reser__input" type="text">  
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <span class="reser__info">예약시간 : </span>
+                        <input class="reser__input" type="text">  
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <span class="reser__info">예약인원 : </span>
+                        <input class="reser__input" type="text">  
+                    </form>
+                </li>
+                <li>
+                    <button><a onclick="history.back()">뒤로가기</a></button>
+                    <button>제출</button>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

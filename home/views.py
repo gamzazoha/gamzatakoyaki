@@ -22,3 +22,9 @@ def place1(request):
 
 def food1(request):
     return render(request, 'category__food__1.html')
+
+def reservation_pos(request):
+    return render(request, 'reservation__possible.html')
+
+def reservation_imp(request):
+    return render(request, 'reservation__impossible.html')

@@ -7,6 +7,24 @@
     color: #000;
 
 }
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .tagami{
     position: absolute;
     width:7%;
@@ -15,17 +33,22 @@
 }
 
 h1{
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 100;
+    margin-bottom: 15px;
+    font-family: 'SDSamliphopangche_Outline', serif;
 }
 
 h4{
     font-size: 20px;
+    font-family: 'ONE-Mobile-POP', serif;
     font-weight: 10;
+    letter-spacing: 1px;
 }
 .contents1{
     font-size: 17px;
     font-weight: lighter;
+    font-family: 'S-CoreDream-3Light',serif;
 }
 .contents1_bold{
     font-size: 18px;
@@ -49,6 +72,7 @@ h4{
 
 .result{
     font-size:22px;
+    font-family: 'S-CoreDream-3Light',serif;
 }
 
 .intro_bg{
@@ -203,7 +227,6 @@ h4{
     margin-top: 9px;
     width: 28%;
 }
-
 
 .icons .contents2{
     width:200px;

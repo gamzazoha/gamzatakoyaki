@@ -6,7 +6,11 @@ ul {
     list-style: none;
     padding: 0;
 }
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
 
+}
 .tagami{
     position: fixed;
     width:30%;
@@ -58,8 +62,10 @@ body {
 }
 .info li{
     font-size: 22px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
     letter-spacing: -1px;
+    font-family: 'IM_Hyemin-Bold';
 }
 
 .info li:last-child{

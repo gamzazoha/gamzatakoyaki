@@ -26,7 +26,7 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return redirect('home')
+            return redirect('pages/')
         else:
             return render(request, "login.html", {
                 'error': 'Username or Password is incorrect.',
@@ -37,7 +37,7 @@ def login(request):
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
-        redirect('home')
+        redirect('home/')
     return render(request,'login.html')
     
 def home(request):

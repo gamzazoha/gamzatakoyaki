@@ -17,3 +17,8 @@ def place(request):
 def beauty(request):
     return render(request, 'category__beauty.html')
 
+def place1(request):
+    return render(request, 'category__place__1.html')
+
+def food1(request):
+    return render(request, 'category__food__1.html')

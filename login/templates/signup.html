@@ -1,18 +1,31 @@
-<h1>회원가입 페이지. </h1>
-
-<form action="{% url 'signup' %}" method="POST" >
-{% csrf_token %}
-    Username:
-    <br>
-    <input name='username' type='text' value=''>
-    <br>
-    Password:
-    <br>
-    <input name='password1' type="password" value=''>
-    <br>
-    Confirm Password:
-    <br>
-    <input name='password2' type="password" value=''>
-    <br>
-    <input class='btn btn-primary' type="submit" value="signup">
-</form>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+        font-family: 'IM_Hyemin-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+        }
+        body {
+        font-family: 'IM_Hyemin-Bold';
+        }
+    </style>
+</head>
+<body style="background: rgb(173, 194, 173); display: flex; flex-direction: column; align-items: center;">
+    <h1>회원가입</h1>
+    <form style="display: flex; flex-direction: column; align-items: center;" action="{% url 'signup' %}" method="POST" >
+        {% csrf_token %}
+        <div style="margin-bottom: 10px; width: 100%; display: flex; justify-content: space-between;">
+            <span style="margin-right: 30px;">아이디</span>
+            <input name='username' type='text' value=''>
+        </div>
+        <div style="margin-bottom: 10px; width: 100%; display: flex; justify-content: space-between;">
+            <span style="margin-right: 30px;">패스워드</span>
+            <input name='password1' type="password" value=''>
+        </div>
+        <div style="margin-bottom: 10px; width: 100%; display: flex; justify-content: space-between;">
+            <span style="margin-right: 30px;">패스워드 확인</span>
+            <input name='password2' type="password" value=''>
+        </div>
+        <input style="font-family: 'IM_Hyemin-Bold'; font-size: 16px; border: 0; cursor: pointer; margin-top: 30px; border-radius: 5px; padding: 10px; background: lightgray;" class='btn btn-primary' type="submit" value="가입하기">  
+    </form>
+</body>

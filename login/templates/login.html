@@ -1,19 +1,31 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+        font-family: 'IM_Hyemin-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+        }
+        body {
+        font-family: 'IM_Hyemin-Bold';
+        }
+    </style>
+</head>
 {% if error %}
 {{ error }}
 {% endif %}
 <body style="background: rgb(173, 194, 173); display: flex; flex-direction: column; align-items: center;">
-    <h1>Login</h1>
+    <h1>로그인</h1>
     <form style="display: flex; flex-direction: column; align-items: center;" method="POST" action="{% url 'login'%}">
         {% csrf_token %}
-        <div style="width: 100%; display: flex; justify-content: space-between;">
+        <div style="margin-bottom: 10px; width: 100%; display: flex; justify-content: space-between;">
             <span style="margin-right: 30px;">아이디</span>
             <input name="username" type="text" value="">
         </div>
-        <div style="width: 100%; display: flex; justify-content: space-between;">
-            <span style="margin-right: 30px;">비번</span>
+        <div style="margin-bottom: 10px; width: 100%; display: flex; justify-content: space-between;">
+            <span style="margin-right: 30px;">패스워드</span>
             <input name="password" type="password" value="">    
         </div>
-        <input style="border: 0; cursor: pointer; margin-top: 30px; border-radius: 5px; padding: 10px; background: lightgray;" class="btn btn-primary" type="submit" value="로그인">
+        <input style="font-family: 'IM_Hyemin-Bold'; font-size: 16px; border: 0; cursor: pointer; margin-top: 30px; border-radius: 5px; padding: 10px; background: lightgray;" class="btn btn-primary" type="submit" value="로그인">
     </form>
-    <a style="text-decoration: none; border-radius: 5px; padding: 5px; background: lightgray; color: black;" href="{% url 'signup' %}" method = 'POST' > 회원가입</a>
+    <a style="font-size: 16px; text-decoration: none; border-radius: 5px; padding: 10px; background: lightgray; color: black;" href="{% url 'signup' %}" method = 'POST' > 회원가입</a>
 </body>

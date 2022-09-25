@@ -37,9 +37,8 @@
 ------------
 
 ##### [admin 계정]
-> id : admin
-> 
-> password : 1234
+  * id : admin
+  * password : 1234
 
 ------------
 ##### [url]
